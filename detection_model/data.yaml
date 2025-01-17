@@ -1,0 +1,9 @@
+path: '/content/drive/MyDrive/infosys/detection_model/data.yaml'
+train: '/content/drive/MyDrive/infosys/detection_model/detection_dataset/dataset/dataset/images/train'
+val: '/content/drive/MyDrive/infosys/detection_model/detection_dataset/dataset/dataset/images/val'
+
+
+names:
+  0: name
+  1: uid
+  2: address
