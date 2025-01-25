@@ -9,3 +9,4 @@ This project focuses on detecting and preventing Aadhaar-related fraud using AI-
 
 ---
 
+![Image](https://github.com/user-attachments/assets/858c47d2-2613-4730-82dd-af14bd6f7bf6)
