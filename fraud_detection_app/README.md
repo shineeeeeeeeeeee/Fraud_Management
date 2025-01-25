@@ -131,7 +131,7 @@ pip install -r requirements.txt
 # Contact
 For any queries, feel free to reach out at:
 
-- Email: your-email@example.com
-- GitHub: your-username
+- Email: ssuri2327@gmail.com
+- GitHub: https://github.com/shineeeeeeeeeeee/
 # License
 This project is licensed under the MIT License.
