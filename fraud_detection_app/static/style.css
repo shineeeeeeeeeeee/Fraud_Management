@@ -1,0 +1,247 @@
+/* General styles */
+html, body {
+    height: 100%; /* Ensure the body takes up full viewport height */
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    margin: 0;
+    padding: 0;
+    color: #35424a;
+    overflow: auto; /* Allow scrolling */
+}
+
+h1, h2 {
+    color: #35424a;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+/* Container styles */
+.container {
+    max-width: 1400px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.container:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar styles */
+nav.navbar {
+    background: linear-gradient(135deg, #35424a, #597a8e);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+nav.navbar a {
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+nav.navbar a:hover {
+    background-color: #82b5c7;
+    border-radius: 8px;
+    transform: scale(1.1);
+}
+
+/* Dashboard styles */
+.dashboard {
+    background-color: #f7f9fc;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.dashboard .btn:hover {
+    transform: scale(1.05);
+}
+
+/* Form styles */
+form {
+    margin-bottom: 30px;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="file"] {
+    border: 2px solid #ced4da;
+    border-radius: 6px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:focus {
+    border-color: #35424a;
+}
+
+button {
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.btn-primary {
+    background-color: #82b5c7;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #82b5c7;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    display: none;
+    /* Hidden by default */
+    font-weight: bold;
+}
+.hide {
+    border: none;
+    display: none;
+    /* Hidden by default */
+    font-weight: bold;
+
+}
+.hide.visible{
+    display: inline-block;
+
+}
+
+.btn-success.visible {
+    display: inline-block;
+    /* Shown only when results are ready */
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Results table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #35424a;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background: linear-gradient(135deg, #35424a, #82b5c7);
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+    font-size: 1em;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #82b5c7;
+}
+
+tbody td {
+    padding: 10px;
+    border: 1px solid #82b5c7;
+    font-size: 0.9em;
+}
+
+/* Alerts and messages */
+#results p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+/* Footer styles */
+footer {
+    background: linear-gradient(135deg, #35424a, #2c3e50);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    font-size: 1em;
+    position: relative; /* Ensure it's placed at the bottom of the content */
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    
+    margin-top: auto; /* This pushes it to the bottom of the content */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    table {
+        font-size: 0.8em;
+    }
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
