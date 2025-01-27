@@ -400,8 +400,8 @@ def show_results():
 @app.route('/')
 def home():
     if 'name' in session:
-        return render_template('del.html', name=session['name'])
-    return render_template('del.html', name=None)
+        return render_template('index.html', name=session['name'])
+    return render_template('index.html', name=None)
 
 @app.route('/upload', methods=['POST'])
 def upload_files():
